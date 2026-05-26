@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quote Generator</title>
+</head>
+<body>
+
+    <h1>Random Quote Generator</h1>
+
+    <h3>{{ quote }}</h3>
+
+    <a href="/">
+        <button>Generate New Quote</button>
+    </a>
+
+    <hr>
+
+    <h2>Quote History</h2>
+
+    <ul>
+        {% for item in history %}
+            <li>{{ item[1] }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
